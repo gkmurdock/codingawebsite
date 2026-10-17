@@ -1,0 +1,1093 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=UnifrakturCook:wght@700&display=swap');
+
+/* =========================================
+   PAGE LAYOUT / FONT SETUP (ALL PAGES)
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f1f1f1;
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   NAVIGATION BAR
+   GRACE FIX THIS LATER ITS UGLY
+========================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+}
+
+.logo {
+    color: #111111;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    opacity: 0.5;
+}
+
+
+/* =========================================
+   LANDING PAGE / HERO SETUP
+========================================= */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   INTRODUCTION PAGE LAYOUT
+========================================= */
+
+.intro {
+    width: 100%;
+    padding: 100px 7vw;
+    background-color: #f1f1f1;
+    border-top: 8px solid #111111;
+}
+
+
+/* =========================================
+   TOOLKIT PAGE SECTIONS
+========================================= */
+
+/* =========================================
+   LABEL #1 — WHAT MAKES A GREAT DESIGNER?
+========================================= */
+
+.intro-label {
+    margin-bottom: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   INTRODUCTION CONTENT
+========================================= */
+
+.intro-content {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.intro-content h2 {
+    margin-bottom: 50px;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 0.85;
+    text-transform: uppercase;
+}
+
+.intro-content h2 span {
+    color: #ff3138;
+}
+
+/* =========================================
+   INTRODUCTION BODY TEXT
+========================================= */
+
+.intro-content p {
+    max-width: 800px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+/* =========================================
+   TYPOGRAPHY SECTION BEGINNING
+========================================= */
+
+.typography-section {
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #111111;
+    padding-bottom: 100px;
+}
+
+/* =========================================
+   SECTION HEADER
+   USED FOR THE BIG 01 / 02 TITLES
+========================================= */
+
+.section-header {
+    width: 100%;
+    padding: 80px 7vw;
+    border-bottom: 3px solid #111111;
+}
+
+.section-number {
+    margin-bottom: 20px;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 0.8;
+    color: #ff3138;
+}
+
+.section-title {
+    width: 100%;
+    font-size: 110px;
+    font-weight: 900;
+    line-height: 0.8;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   TYPOGRAPHY SECTION CONTENT
+========================================= */
+
+.typography-content {
+    width: 100%;
+    padding: 80px 7vw 0;
+}
+
+/* =========================================
+   TYPOGRAPHY SECTION HEADING
+========================================= */
+
+.typography-heading {
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 70px;
+}
+
+.typography-heading h2 {
+    font-size: 85px;
+    font-weight: 900;
+    line-height: 0.85;
+    text-transform: uppercase;
+}
+
+.typography-heading h2 span {
+    color: #ff3138;
+}
+
+/* =========================================
+   H IMAGE
+========================================= */
+
+.hierarchy-image {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.hierarchy-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hierarchy-image figcaption {
+    max-width: 900px;
+    margin-top: 15px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =========================================
+   HIERARCHY TYPOGRAPHY BODY TEXT
+========================================= */
+
+.typography-text {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.typography-text p {
+    padding-right: 40px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+/* =========================================
+   FONT PAIRING SECTION
+========================================= */
+
+.font-pairing {
+    width: 100%;
+    background-color: #d9d9d9;
+    padding: 100px 0;
+}
+
+.font-pairing-content {
+    width: 100%;
+    padding: 0 7vw;
+}
+
+/* =========================================
+   TYPOGRAPHY BUTTON
+========================================= */
+
+.typography-button {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto 0;
+}
+
+.typography-button a {
+    display: inline-block;
+    padding: 18px 25px;
+    background-color: #ff3138;
+    color: #111111;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #ff3138;
+}
+
+/* Hover taken from W3 Schools */
+
+.typography-button a:hover {
+    background-color: #111111;
+    color: #ff3138;
+    border-color: #111111;
+}
+
+/* =========================================
+   COLOR & DESIGN SETUP
+========================================= */
+
+.color-design-section {
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #111111;
+}
+
+/* =========================================
+   WHAT IS CONTRAST?
+========================================= */
+
+.contrast-section {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #d9d9d9;
+    color: #111111;
+}
+
+.contrast-content {
+    width: 100%;
+    padding: 0 7vw;
+}
+
+/* =========================================
+   WHAT IS REPETITION?
+========================================= */
+
+.repetition-section {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #f1f1f1;
+    color: #111111;
+}
+
+.repetition-content {
+    width: 100%;
+    padding: 0 7vw;
+}
+
+/* =========================================
+   SOURCES HERO
+========================================= */
+
+.sources-hero {
+    width: 100%;
+    background-color: #111111;
+}
+
+.sources-hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* =========================================
+   IMAGE SOURCES
+========================================= */
+
+.sources-section {
+    width: 100%;
+    padding: 100px 7vw;
+    background-color: #f1f1f1;
+    color: #111111;
+}
+
+/* =========================================
+   SOURCES HEADING
+========================================= */
+
+.sources-header {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.sources-label {
+    margin-bottom: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff3138;
+}
+
+.sources-header h1 {
+    max-width: 1200px;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 0.8;
+    text-transform: uppercase;
+}
+
+.sources-header h1 span {
+    color: #ff3138;
+}
+
+/* =========================================
+   SOURCE LIST
+   Section breaks inspired by W3 Schools + Google Gemini
+========================================= */
+
+.source-list {
+    width: 100%;
+}
+
+.source-entry {
+    display: grid;
+    grid-template-columns: 12% 88%;
+    width: 100%;
+    padding: 35px 0;
+}
+
+.source-number {
+    font-size: 35px;
+    font-weight: 900;
+    color: #ff3138;
+}
+
+.source-information {
+    max-width: 950px;
+}
+
+.source-information p {
+    margin-bottom: 18px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.source-information a {
+    display: inline-block;
+    padding-bottom: 4px;
+    color: #ff3138;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff3138;
+}
+
+.source-information a:hover {
+    color: #111111;
+    border-color: #111111;
+}
+
+/* =========================================
+   TEXTUAL SOURCES
+========================================= */
+
+.textual-sources {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #d9d9d9;
+    color: #111111;
+}
+
+.textual-sources-content {
+    width: 100%;
+    padding: 0 7vw;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+    width: 100%;
+    padding: 70px 7vw 50px;
+    background-color: #111111;
+    color: #f1f1f1;
+}
+
+.footer-title {
+    max-width: 1000px;
+    margin-bottom: 70px;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 0.85;
+    text-transform: uppercase;
+}
+
+.footer-title span {
+    color: #ff3138;
+}
+
+.footer-information {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #f1f1f1;
+}
+
+.footer-information p {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   ABOUT HERO
+========================================= */
+
+.about-hero {
+    width: 100%;
+    height: 700px;
+    background-color: #111111;
+    color: #f1f1f1;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* =========================================
+   DESIGNER / MOTION GRAPH / COMIC
+========================================= */
+
+.about-hero-label {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff3138;
+}
+
+/* =========================================
+   ABOUT HERO TITLE
+========================================= */
+
+.about-hero-title {
+    width: 100%;
+}
+
+.about-hero-title h1 {
+    max-width: 1200px;
+    font-size: 128px;
+    font-weight: 900;
+    line-height: 0.75;
+    text-transform: uppercase;
+}
+
+.about-hero-title h1 span {
+    color: #ff3138;
+}
+
+/* =========================================
+   ABOUT HERO BOTTOM INFORMATION
+========================================= */
+
+.about-hero-bottom {
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid #f1f1f1;
+}
+
+.about-hero-bottom p {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   ABOUT ME SECTION
+========================================= */
+
+.about-bio-section {
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #111111;
+    border-top: 3px solid #111111;
+}
+
+/* =========================================
+   ABOUT ME IMAGE CONTENT
+========================================= */
+
+.about-bio-content {
+    width: 100%;
+    padding: 70px 7vw;
+    background-color: #d9d9d9;
+}
+
+/*=====================================
+   ABOUT ME IMAGE
+========================================= */
+
+.about-portrait {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about-portrait img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 5px solid #111111;
+}
+
+/* =========================================
+   ABOUT BIO TEXT
+========================================= */
+
+.about-bio-text {
+    width: 100%;
+    padding: 90px 7vw;
+}
+
+.about-small-label {
+    margin-bottom: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff3138;
+}
+
+.about-bio-text h2 {
+    margin-bottom: 50px;
+    font-size: 85px;
+    font-weight: 900;
+    line-height: 0.85;
+    text-transform: uppercase;
+}
+
+.about-bio-text h2 span {
+    color: #ff3138;
+}
+
+.about-bio-text p {
+    margin-bottom: 30px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* =========================================
+   DESCRIPTION SECTION
+========================================= */
+
+.about-interests-section {
+    width: 100%;
+    background-color: #d9d9d9;
+    color: #111111;
+    border-top: 8px solid #111111;
+}
+
+.about-interests-content {
+    width: 100%;
+    padding: 100px 7vw;
+}
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.about-contact-section {
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #111111;
+}
+
+.contact-content {
+    width: 100%;
+    padding: 0 7vw 100px;
+}
+
+/* =========================================
+   CONTACT HEADING
+========================================= */
+
+.contact-heading {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact-heading h2 {
+    margin-bottom: 40px;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 0.85;
+    text-transform: uppercase;
+}
+
+.contact-heading h2 span {
+    color: #ff3138;
+}
+
+.contact-heading p {
+    width: 70%;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.contact-form {
+    width: 100%;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff3138;
+}
+
+/* Contact Formatting taken from W3 Schools */
+
+/* =========================================
+   CONTACT INPUTS
+========================================= */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 0;
+    background-color: transparent;
+    color: #111111;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid #111111;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #777777;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: #ff3138;
+}
+
+/* =========================================
+   CONTACT BUTTON
+========================================= */
+
+.contact-button {
+    margin-top: 20px;
+}
+
+.contact-button button {
+    padding: 18px 25px;
+    background-color: #ff3138;
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #ff3138;
+    cursor: pointer;
+}
+
+.contact-button button:hover {
+    background-color: #111111;
+    color: #ff3138;
+    border-color: #111111;
+}
+
+/* =========================================
+   PORTFOLIO PAGE
+========================================= */
+
+.portfolio-section {
+    width: 100%;
+    background-color: #d9d9d9;
+}
+
+/* =========================================
+   INSTAGRAM EDITS
+========================================= */
+
+.portfolio-edits {
+    width: 100%;
+    padding: 80px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-edit {
+    width: 31%;
+}
+
+/* Instagram gives the embeds their own sizing.
+   This makes them stay inside the three columns. */
+/* I used Google's Gemini to shorten the embed section, as a lot of it was for general coding. I didn't need all of the embed content. Also, I didn't know how to use it. */
+
+.portfolio-edit .instagram-media {
+    min-width: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+/* =========================================
+   EXPERIMENT PAGE CSS
+   WITH HELP FROM A.I
+========================================= */
+
+.experiment-hero {
+    width: 100%;
+    height: 700px;
+    padding: 70px;
+    background-color: #111111;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* =========================================
+   EXPERIMENT HERO LABEL
+========================================= */
+
+.experiment-label {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff3138;
+}
+
+.experiment-title {
+    width: 100%;
+}
+
+.experiment-title h1 {
+    font-size: 128px;
+    font-weight: 900;
+    line-height: 0.8;
+    text-transform: uppercase;
+}
+
+.experiment-title h1 span {
+    color: #ff3138;
+}
+
+/* =========================================
+   EXPERIMENT HERO BOTTOM
+========================================= */
+
+.experiment-bottom {
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid #f1f1f1;
+}
+
+.experiment-bottom p {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   EXPERIMENT INTRODUCTION
+========================================= */
+
+.experiment-intro {
+    width: 100%;
+    padding: 100px 7vw;
+    background-color: #f1f1f1;
+    border-top: 3px solid #111111;
+}
+
+.experiment-small-label {
+    margin-bottom: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff3138;
+}
+
+.experiment-intro h2 {
+    margin-bottom: 40px;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 0.85;
+    text-transform: uppercase;
+}
+
+.experiment-intro h2 span {
+    color: #ff3138;
+}
+
+.experiment-intro p {
+    width: 70%;
+    margin-bottom: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* =========================================
+   BAD DESIGN SECTION
+   PURPOSEFULLY UGLY
+========================================= */
+
+.bad-design-section {
+    width: 100%;
+    padding: 100px 7vw;
+    background-color: #d9d9d9;
+    border-top: 3px solid #111111;
+    border-bottom: 3px solid #111111;
+}
+
+/* =========================================
+   PURPOSEFULLY BAD DESIGN
+   AI GENERATED
+========================================= */
+
+.bad-design {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: yellow;
+    color: blue;
+    border: 8px dotted purple;
+    text-align: center;
+}
+
+.bad-design h2 {
+    margin-bottom: 15px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 50px;
+    color: red;
+}
+
+.bad-design h3 {
+    margin-bottom: 20px;
+    font-family: "Times New Roman", serif;
+    font-size: 30px;
+    color: green;
+}
+
+.bad-design p {
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+.bad-design-small {
+    font-size: 12px !important;
+}
+
+.bad-button {
+    width: 250px;
+    margin: 30px auto 0;
+    padding: 20px;
+    background-color: lime;
+    color: purple;
+    border: 5px solid red;
+    font-weight: bold;
+}
+
+/* =========================================
+   DESIGN GAME
+========================================= */
+
+.design-game {
+    width: 100%;
+    padding: 100px 7vw;
+    background-color: #f1f1f1;
+}
+
+.design-game h2 {
+    margin-bottom: 60px;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 0.85;
+    text-transform: uppercase;
+}
+
+.design-game h2 span {
+    color: #ff3138;
+}
+
+/* =========================================
+   HIDE RADIO BUTTONS ACTION
+========================================= */
+
+.design-game input {
+    display: none;
+}
+
+/* =========================================
+   ANSWER BUTTONS
+========================================= */
+
+.answer-button {
+    display: block;
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 15px;
+    background-color: #d9d9d9;
+    color: #111111;
+    border: 2px solid #111111;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.answer-button:hover {
+    background-color: #ff3138;
+}
+
+/* =========================================
+   ANSWER RESPONSES
+========================================= */
+
+.answer {
+    display: none;
+    padding: 40px;
+    margin-bottom: 30px;
+    background-color: #111111;
+    color: #f1f1f1;
+}
+
+.answer h3 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #ff3138;
+}
+
+.answer p {
+    width: 70%;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* =========================================
+   SHOW ANSWERS
+
+This is the weird-looking part that actually makes the CSS-only game work. When one of the radio buttons is clicked, its answer appears. This section (SHOW ANSWERS) is A.I generated.
+========================================= */
+
+#typography-answer:checked + .answer-button + .typography-response {
+    display: block;
+}
+
+#color-answer:checked + .answer-button + .color-response {
+    display: block;
+}
+
+#hierarchy-answer:checked + .answer-button + .hierarchy-response {
+    display: block;
+}
+
+/* =========================================
+   SELECTED ANSWER
+========================================= */
+
+.design-game input:checked + .answer-button {
+    background-color: #ff3138;
+}
+
+/* =========================================
+   ABOUT THE EXPERIMENT
+========================================= */
+
+.experiment-information {
+    width: 100%;
+    padding: 100px 7vw;
+    background-color: #d9d9d9;
+    border-top: 3px solid #111111;
+}
+
+.experiment-information h2 {
+    margin-bottom: 40px;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 0.85;
+    text-transform: uppercase;
+}
+
+.experiment-information h2 span {
+    color: #ff3138;
+}
+
+.experiment-information p {
+    width: 70%;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
